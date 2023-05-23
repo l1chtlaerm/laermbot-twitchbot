@@ -18,7 +18,7 @@ const client = new tmi.Client({
     },
     identity: {
         username: `${process.env.TWITCH_USERNAME}`,
-        password: `oauth:${process.env.TWITCH_OAUTH}`
+        password: `oauth:${process.env.TWITCH_OAUTH}`,
     },
     // Lack of the identity tags makes the bot anonymous and able to fetch messages from the channel
     // for reading, supervision, spying, or viewing purposes only
@@ -62,11 +62,8 @@ client.on("message", (channel, tags, message, self) => {
         case "!unfortunatenature":
             client.say(
                 channel,
-                `IronMonners have been memed by unfortunate natures 0 times.`
+                `IronMonners have been memed by unfortunate natures COMING SOON™ times.`
             );
-            break;
-        case "!95acc":
-            client.say(channel, `BAD`);
             break;
     }
 });
