@@ -1,16 +1,32 @@
 {
-  "name": "express-template",
-  "version": "1.0.0",
-  "description": "Express Template",
-  "main": "app.js",
-  "scripts": {
-    "start": "node app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "express": "^4.18.2",
-    "serve-favicon": "^2.5.0"
-  }
+    "name": "laermbot-twitchbot",
+    "version": "1.0.0",
+    "description": "Twitch bot  to meme a bit probably",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "lichtlaerm",
+    "license": "MIT",
+    "dependencies": {
+        "dotenv": "^16.0.3",
+        "express": "^4.18.2",
+        "serve-favicon": "^2.5.0",
+        "tmi.js": "^1.8.5"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/l1chtlaerm/laermbot-twitchbot.git"
+    },
+    "keywords": [
+        "Twitch",
+        "node.js",
+        "chat",
+        "bot"
+    ],
+    "bugs": {
+        "url": "https://github.com/l1chtlaerm/laermbot-twitchbot/issues"
+    },
+    "homepage": "https://github.com/l1chtlaerm/laermbot-twitchbot#readme"
 }
