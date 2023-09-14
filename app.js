@@ -37,6 +37,7 @@ client.on("message", (channel, tags, message, self) => {
     // Create up a switch statement with some possible commands and their outputs
     // The input shall be converted to lowercase form first
     // The outputs shall be in the chats
+    console.log(message.tags);
 
     switch (message.toLowerCase()) {
         // Use 'tags' to obtain the username of the one who has keyed in a certain input
@@ -45,7 +46,6 @@ client.on("message", (channel, tags, message, self) => {
         // We shall use backticks when using tags to support template interpolation in JavaScript
 
         // In case the message in lowercase is equal to the string 'commands', send the sender of that message some of the common commands
-
         case "!commands":
             client.say(
                 channel,
